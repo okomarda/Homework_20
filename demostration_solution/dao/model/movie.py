@@ -2,6 +2,8 @@ from marshmallow import Schema, fields
 
 from setup_db import db
 
+from .genre import Genre
+from .director import Director
 
 class Movie(db.Model):
     __tablename__ = 'movie'
